@@ -4,65 +4,80 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sua equipe na JITSU !</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;400;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <header>
-  <h1>Sua equipe na Jitsu !</h1>
-  <h2>Deixe a divulgação da sua equipe com a gente.</h2>
- </header>
+
  <main>
-  Vantagens:
-  <ul>
-    <li>Sem estoque</li>
-    <li>Variedades de modelos, tamanhos e cores</li>
-    <li>Compra de qualquer lugar</li>
-    <li>Entrega em casa</li>
-  </ul>
-  <div>
-    <img src="img/tshirt_frente.png" alt="Camisa frente">
-    <img src="img/tshirt_back.png" alt="Camisa Traz">
-    <img src="img/regata.png" alt="Regata">
+  <div class="hero">
+    <img src="img/mockup.png">
+    <div class="textos">
+      <div class="header">
+        <h1>Sua equipe na <br><span>JITSU Store!</span></h1>
+        <h2>Deixe a produção dos artigos da sua equipe com a gente.</h2>
+      </div>
+      <ul class="vantagens">
+        <li><span><i data-lucide="check"></i></span> Sem estoque.</li>
+        <li><span><i data-lucide="check"></i></span> Varios modelos, tamanhos e cores.</li>
+        <li><span><i data-lucide="check"></i></span> Compra online (pix, cartão, boleto).</li>
+        <li><span><i data-lucide="check"></i></span> Entrega em casa.</li>
+      </ul>
+    </div>
   </div>
-Deixe seus dados que entratemos em contato com você !
+
 <form action="mailto:jitsu.contato@gmail.com" method="post">
+  <span class="form-title">Deixe seus dados que entratemos em contato com você !</span>
   <div class="form-input">
-  <label for="nomeequipe">Nome</label>
-  <input type="text" name="nomeequipe" value="">
+  <label for="nomeequipe">Equipe:</label>
+  <input type="text" name="nomeequipe" value="" placeholder="Ex: Fight Club">
   </div>
 
   <div class="form-input">
-  <label for="responsavel">Responsável</label>
-  <input type="text" name="responsavel" value="">
+  <label for="responsavel">Responsável:</label>
+  <input type="text" name="responsavel" value="" placeholder="Ex: Jhon Doe">
 </div>
   <div class="form-input">
-  <label for="instagram">Instagram</label>
-  <input type="text" name="instagram" value="">
+  <label for="instagram">Site/Social</label>
+  <input type="text" name="instagram" value="" placeholder="www.fightclub.com.br ou @fightclub">
 </div>
   <div class="form-input">
   <label for="email">E-Mail</label>
-  <input type="email" name="email" value="">
+  <input type="email" name="email" value="" placeholder="contato@fightclub.com.br">
 </div>
   <div class="form-input">
-  <label for="telefone">Telefone</label>
-  <input type="tel" name="telefone" value="">
+  <label for="telefone">Whatsapp</label>
+  <input type="tel" name="telefone" value="" placeholder="(11)9876-1234">
 </div>
   <div class="form-input">
   <label for="uf">Estado</label>
   <select name="uf" id="uf">
-    <option value="MG">MG</option>
+    <option value="MG">SP</option>
   </select>
 </div>
 <div class="form-input">
   <label for="cidade">Cidade</label>
   <select name="cidade" id="cidade">
-    <option value="Juiz de fora">Juiz de Fora</option>
+    <option value="São Paulo">São Paulo</option>
   </select>
 </div>
-  <button>Enviar</button>
+  <button>Quero mais detalhes !</button>
 </form>
  </main>
- <footer></footer>
+ <footer>
+  <a href="www.jitsu.com.br" target="_blank"><span><i data-lucide="store"></i></span>www.jitsu.com.br</a>
+
+    <a href="https://www.intagram.com/vista.jitsu" target="_blank"><span><i data-lucide="instagram"></i></span>vista.jitsu</a>
+    <a href="https://www.facebook.com/vista.jitsu" target="_blank"><span><i data-lucide="facebook"></i></span>vista.jitsu</a>
+
+ </footer>
+ <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
   <script src="script.js"></script>
 </body>
 </html>

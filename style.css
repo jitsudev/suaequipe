@@ -2,9 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-html{
+html {
   width: 100vw;
   height: 100vh;
 }
@@ -15,10 +18,78 @@ body{
   background-color: black;
   color: white;
 }
+
+.hero{
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+
+.hero img{
+  height: 600px;
+}
+
+.textos{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.header > h1{
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 65px;
+  margin-bottom: 20px;
+}
+
+.header > h1 > span{
+  font-size: 80px;
+  color: rgb(255, 210, 0);
+}
+.header > h2{
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 45px;
+}
+
+ul {
+  padding: 30px;
+  list-style: none;
+}
+
+ul li{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 50px;
+  font-size: 30px;
+}
+
+ul li span{
+  display: flex;
+  color: rgb(255, 210, 0);
+}
+
+main {
+  width: 50%;
+  margin: auto;
+}
+
 form{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
+  background-color: #333;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+form > button {
+  width: 100%;
+  font-size: 28px;
+  margin-top: 10px
 }
 .form-input {
   width: 100%;
@@ -26,14 +97,14 @@ form{
 
 }
 .form-input > label{
- width: 10%;
+ width: 15%;
 }
 .form-input > *{
-  width: 90%;
- }
+  width: 85%;
+}
 
 input {
-  background-color: transparent;
+  background-color: #222;
   border: 1px solid white;
   border-radius: 10px;
   padding: 10px;
@@ -41,7 +112,7 @@ input {
 }
 
 select {
-  background-color: transparent;
+  background-color: #222;
   border: 1px solid white;
   border-radius: 10px;
   padding: 10px;
@@ -56,6 +127,21 @@ button{
   padding: 10px;
 }
 
-img {
-  height: 300px;
+footer{
+ display: flex;
+ height: 200px;
+ align-items: center;
+ justify-content: space-around;
+}
+
+
+footer a{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  gap: 10px;
+}
+
+footer a span{
+  color: rgb(255, 210, 0);
 }
