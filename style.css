@@ -15,7 +15,8 @@ html {
 body{
   width: 100%;
   height: 100%;
-  background-color: black;
+  background: fixed no-repeat rgb(0,0,0) url("img/bg.jpg");
+  background-size:cover;
   color: white;
 }
 
@@ -101,6 +102,11 @@ form > button {
 }
 .form-input > *{
   width: 85%;
+}
+
+.form-title {
+  font-size: 30px;
+  margin: 20px;
 }
 
 input {
