@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sua equipe na JITSU !</title>
-  
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;400;900&display=swap" rel="stylesheet">
@@ -29,43 +29,75 @@
     </div>
   </div>
 
-<form action="mailto:jitsu.contato@gmail.com" method="post">
+<div class="form">
+<form id="form-equipes" action="https://formspree.io/f/xnqkgyey" method="post">
   <span class="form-title">Deixe seus dados que entratemos em contato com você !</span>
   <div class="form-input">
   <label for="nomeequipe">Equipe:</label>
-  <input type="text" name="nomeequipe" value="" placeholder="Ex: Fight Club">
+  <input type="text" name="nomeequipe" value="" placeholder="Ex: Fight Club" required>
   </div>
 
   <div class="form-input">
   <label for="responsavel">Responsável:</label>
-  <input type="text" name="responsavel" value="" placeholder="Ex: Jhon Doe">
+  <input type="text" name="responsavel" value="" placeholder="Ex: Jhon Doe" required>
 </div>
   <div class="form-input">
-  <label for="instagram">Site/Social</label>
+  <label for="instagram">Site/Social:</label>
   <input type="text" name="instagram" value="" placeholder="www.fightclub.com.br ou @fightclub">
 </div>
   <div class="form-input">
-  <label for="email">E-Mail</label>
-  <input type="email" name="email" value="" placeholder="contato@fightclub.com.br">
+  <label for="email">E-Mail:</label>
+  <input type="email" name="email" value="" placeholder="contato@fightclub.com.br" required>
 </div>
   <div class="form-input">
-  <label for="telefone">Whatsapp</label>
-  <input type="tel" name="telefone" value="" placeholder="(11)9876-1234">
+  <label for="telefone">Whatsapp:</label>
+  <input type="tel" name="telefone" value="" placeholder="(11)9876-1234" required>
 </div>
   <div class="form-input">
-  <label for="uf">Estado</label>
-  <select name="uf" id="uf">
-    <option value="MG">SP</option>
+  <label for="uf">Estado:</label>
+  <select id="select-estados" name="uf" id="uf">
+    <option selected>Escolher...</option>
+    <option value="AC">Acre</option>
+    <option value="AL">Alagoas</option>
+    <option value="AP">Amapá</option>
+    <option value="AM">Amazonas</option>
+    <option value="BA">Bahia</option>
+    <option value="CE">Ceará</option>
+    <option value="DF">Distrito Federal</option>
+    <option value="ES">Espírito Santo</option>
+    <option value="GO">Goías</option>
+    <option value="MA">Maranhão</option>
+    <option value="MT">Mato Grosso</option>
+    <option value="MS">Mato Grosso do Sul</option>
+    <option value="MG">Minas Gerais</option>
+    <option value="PA">Pará</option>
+    <option value="PB">Paraíba</option>
+    <option value="PR">Paraná</option>
+    <option value="PE">Pernambuco</option>
+    <option value="PI">Piauí</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="RN">Rio Grande do Norte</option>
+    <option value="RS">Rio Grande do Sul</option>
+    <option value="RO">Rondônia</option>
+    <option value="RR">Roraíma</option>
+    <option value="SC">Santa Catarina</option>
+    <option value="SP">São Paulo</option>
+    <option value="SE">Sergipe</option>
+    <option value="TO">Tocantins</option>
   </select>
 </div>
 <div class="form-input">
-  <label for="cidade">Cidade</label>
-  <select name="cidade" id="cidade">
-    <option value="São Paulo">São Paulo</option>
+  <label for="cidade">Cidade:</label>
+  <select id="select-cidades" name="cidade" id="cidade">
+    <option selected>Escolher...</option>
   </select>
 </div>
   <button>Quero mais detalhes !</button>
 </form>
+<div id="status" class="hide">
+
+</div>
+</div>
  </main>
  <footer>
   <a href="www.jitsu.com.br" target="_blank"><span><i data-lucide="store"></i></span>www.jitsu.com.br</a>
