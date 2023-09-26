@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -12,42 +12,44 @@ html {
   height: 100vh;
 }
 
-body{
+body {
   width: 100%;
   height: 100%;
-  background: fixed no-repeat rgb(0,0,0) url("img/body_bg.jpg");
-  background-size:cover;
+  background: fixed no-repeat rgb(0, 0, 0) url("img/body_bg.jpg");
+  background-size: cover;
   color: white;
 }
 
-.hero{
+.hero {
   display: flex;
   flex-direction: row;
   margin-top: 100px;
+  width: 80%;
+  margin: auto;
 }
 
-.hero img{
+.hero img {
   height: 600px;
 }
 
-.textos{
+.textos {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-.header > h1{
+.header > h1 {
   font-weight: bold;
   font-size: 60px;
   line-height: 65px;
   margin-bottom: 20px;
 }
 
-.header > h1 > span{
+.header > h1 > span {
   font-size: 80px;
   color: rgb(255, 210, 0);
 }
-.header > h2{
+.header > h2 {
   font-weight: 100;
   font-size: 50px;
   line-height: 45px;
@@ -58,7 +60,7 @@ ul {
   list-style: none;
 }
 
-ul li{
+ul li {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -66,46 +68,41 @@ ul li{
   font-size: 30px;
 }
 
-ul li span{
+ul li span {
   display: flex;
   color: rgb(255, 210, 0);
 }
 
-main {
-  width: 50%;
-  margin: auto;
-}
-
 .form {
+  width: 80%;
+  margin: auto;
   background-color: #333;
   padding: 30px;
   border-radius: 30px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  
 }
 
 form > button {
   width: 100%;
   font-size: 28px;
-  margin-top: 10px
+  margin-top: 10px;
 }
 .form-input {
   width: 100%;
   display: flex;
-
 }
-.form-input > label{
- width: 15%;
+.form-input > label {
+  width: 15%;
 }
-.form-input > *{
+.form-input > * {
   width: 85%;
 }
 
@@ -119,7 +116,7 @@ input {
   border: 1px solid white;
   border-radius: 10px;
   padding: 10px;
-  color:white;
+  color: white;
 }
 
 select {
@@ -127,10 +124,10 @@ select {
   border: 1px solid white;
   border-radius: 10px;
   padding: 10px;
-  color:white;
+  color: white;
 }
 
-button{
+button {
   background-color: red;
   color: white;
   border: none;
@@ -138,36 +135,106 @@ button{
   padding: 10px;
 }
 
-footer{
- display: flex;
- height: 200px;
- align-items: center;
- justify-content: space-around;
+footer {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  justify-content: space-around;
 }
 
-
-footer a{
+footer a {
   text-decoration: none;
   color: white;
   display: flex;
   gap: 10px;
 }
 
-footer a span{
+footer a span {
   color: rgb(255, 210, 0);
 }
 
-.hide{
+.hide {
   display: none !important;
 }
-.show{
+.show {
   display: flex !important;
 }
 
-#status{
+#status {
   height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 40px;
+}
+
+@media screen and (max-width: 1080px) {
+  .hero {
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+  .hero > img {
+    margin: auto;
+    width: 60%;
+    height: auto;
+  }
+
+  .header > h1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 55px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .header > h1 > span {
+    font-size: 60px;
+    color: rgb(255, 210, 0);
+  }
+
+  .header > h2 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .vantagens {
+    margin: auto;
+  }
+  .vantagens li {
+    height: fit-content;
+    font-size: 20px;
+  }
+
+  .form {
+    width: 100%;
+    background-color: #333;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  form > span {
+    text-align: center;
+  }
+
+  .form-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-input > label {
+    width: 100%;
+  }
+  .form-input > * {
+    width: 100%;
+  }
+
+  footer {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
